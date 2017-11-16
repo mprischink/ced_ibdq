@@ -10,12 +10,12 @@ library("metafor")
 ###################
 
 # Lese Daten aus Excel Files
-dat_pt_all <- read.xlsx("/Users/mprischink/Downloads/sabrina/ced_data.xlsx", sheetName="pt")
+dat_pt_all <- read.xlsx("ced_data.xlsx", sheetName="pt")
 dat_pt <- dat_pt_all[c(1:11), ]
 dat_pt_mc <- dat_pt_all[c(1,13), ]
 dat_pt_cu <- dat_pt_all[c(2:3,12), ]
 
-dat_f_all <- read.xlsx("/Users/mprischink/Downloads/sabrina/ced_data.xlsx", sheetName="f")
+dat_f_all <- read.xlsx("ced_data.xlsx", sheetName="f")
 dat_f <- dat_f_all[c(1:9), ]
 dat_f_mc <- dat_f_all[c(11), ]
 dat_f_cu <- dat_f_all[c(1:2,4,10), ]
